@@ -44,56 +44,48 @@ class FinalCurriculumViewController: UIViewController {
             lbGithub.text = curriculum.gitHub
         } else {
             svGithub.isHidden = true
-            //disableConstrains(svGithub)
         }
         
         if curriculum.emailStatus {
             lbEmail.text = curriculum.email
         } else {
             svEmail.isHidden = true
-            //disableConstrains(svEmail)
         }
 
         if curriculum.linkedinStatus {
             lbLinkedin.text = curriculum.linkedin
         } else {
             svLindedin.isHidden = true
-            //disableConstrains(svLindedin)
         }
         
         if curriculum.objectiveStatus {
             lbObjective.text = curriculum.objective
         } else {
             svObjective.isHidden = true
-            //disableConstrains(svObjective)
         }
         
         if curriculum.hardSkillsStatus {
             lbHardSkills.text = curriculum.hardSkills
         } else {
             svHardSkills.isHidden = true
-            //disableConstrains(svHardSkills)
         }
 
         if curriculum.softSkillsStatus {
             lbSoftSkills.text = curriculum.softSkills
         } else {
             svSoftSkills.isHidden = true
-            //disableConstrains(svSoftSkills)
         }
         
         if curriculum.experienceStatus {
             lbExperience.text = curriculum.experience
         } else {
             svExperience.isHidden = true
-            //disableConstrains(svExperience)
         }
         
         if curriculum.graduationStatus {
             lbGraduation.text = curriculum.graduation
         } else {
             svGraduation.isHidden = true
-            //disableConstrains(svGraduation)
         }
 
     }

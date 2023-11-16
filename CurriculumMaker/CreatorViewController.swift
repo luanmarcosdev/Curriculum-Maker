@@ -34,7 +34,6 @@ class CreatorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //tfName.delegate = self
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -83,13 +82,7 @@ class CreatorViewController: UIViewController {
         newCurriculum.experience = tfExperience.text
         newCurriculum.experienceStatus = swExperience.isOn
         newCurriculum.generate()
-        
-        
-        let confirmationViewController = storyboard?.instantiateViewController(withIdentifier: "ConfirmationViewController")
-        confirmationViewController!.modalPresentationStyle = .overCurrentContext
-        confirmationViewController!.modalTransitionStyle = .crossDissolve
-        
-        present(confirmationViewController!, animated: true)
+        confirmationView()
     }
     
     func checkValidation() {
@@ -101,6 +94,13 @@ class CreatorViewController: UIViewController {
         } else {
             performSegue(withIdentifier: "seguePortfolio", sender: nil)
         }
+    }
+    
+    func confirmationView(){
+        let confirmationViewController = storyboard?.instantiateViewController(withIdentifier: "ConfirmationViewController")
+        confirmationViewController!.modalPresentationStyle = .overCurrentContext
+        confirmationViewController!.modalTransitionStyle = .crossDissolve
+        present(confirmationViewController!, animated: true)
     }
     
 }
