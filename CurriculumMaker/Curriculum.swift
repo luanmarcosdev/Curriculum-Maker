@@ -7,7 +7,7 @@
 
 import Foundation
 
- class Curriculum {
+class Curriculum: Codable {
           
      var name: String
      var age: Int

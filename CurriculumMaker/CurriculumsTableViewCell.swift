@@ -13,8 +13,6 @@ class CurriculumsTableViewCell: UITableViewCell {
     @IBOutlet weak var lbOffice: UILabel!
     @IBOutlet weak var lbCity: UILabel!
     
-    var curriculum = CurriculumManager.shared
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         
